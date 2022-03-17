@@ -83,8 +83,6 @@ if __name__ == '__main__':
 
     check_signals_in_dir(os.path.realpath(godot_repository))
 
-    fine = added.intersection(emitted).intersection(connected)
-
     total = 0
     for signal in sorted(emitted.difference(added).difference(connected)):
         print(f'Signal {signal} is emitted but never added or connected')
