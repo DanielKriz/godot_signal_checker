@@ -68,8 +68,7 @@ if __name__ == '__main__':
     )
     arg_parser.add_argument(
         'godot_repository',
-        nargs='?',
-        metavar='GDREPO',
+        metavar='GODOT_REPOSITORY',
         help='Path to an existing Godot repository'
     )
     args = arg_parser.parse_args(sys.argv[1::])
